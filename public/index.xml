@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal</title>
+    <link>/</link>
+    <description>Recent content on Terminal</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Insane Blog Pipeline</title>
+      <link>/posts/my-insane-blog-pipeline/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/my-insane-blog-pipeline/</guid>
+      <description>&lt;h2 id=&#34;how-to-start&#34;&gt;How to start&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/panr/hugo-theme-terminal#how-to-start&#34;&gt;Link to start&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;You can download the theme manually by going to &lt;a href=&#34;https://github.com/panr/hugo-theme-terminal.git&#34;&gt;https://github.com/panr/hugo-theme-terminal.git&lt;/a&gt; and pasting it to &lt;code&gt;themes/terminal&lt;/code&gt; in your root directory.&lt;/p&gt;&#xA;&lt;p&gt;You can also choose &lt;strong&gt;one of the 3 possibilities&lt;/strong&gt; to install the theme:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;as Hugo Module&lt;/li&gt;&#xA;&lt;li&gt;as a standalone local directory&lt;/li&gt;&#xA;&lt;li&gt;as a git submodule&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;⚠️ The theme needs at least Hugo &lt;strong&gt;Extended&lt;/strong&gt; v0.90.x.&lt;/p&gt;&#xA;&lt;h3 id=&#34;install-theme-as-hugo-module&#34;&gt;Install theme as Hugo Module&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# If this is the first time you&amp;#39;re using Hugo Modules&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# in your project. You have to initiate your own module before&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# you fetch the theme module.&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# hugo mod init [your website/module name]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo mod get github.com/panr/hugo-theme-terminal/v4&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and in your config file add:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
