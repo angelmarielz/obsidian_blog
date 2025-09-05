@@ -7,7 +7,7 @@ tags:
 ---
 ## General MCP work flow
 
-
+!![Image Description](/images/Pasted%20image%20202509041.png.png)
 ## MCP in IDE
 
 歡迎凱大跟子勤!
@@ -26,14 +26,14 @@ tags:
 3. DeepSeek-V3  
 4. Gemini-2.5 pro
 
-
+!![Image Description](/images/Pasted%20image%20202509042.png.png)
 
 ## Flow - IDE with LLM
 
-
+!![Image Description](/images/Pasted%20image%20202509043.png.png)
 ## Flow - IDE with LLM and MCP
 
-
+!![Image Description](/images/Pasted%20image%20202509045.png.png)
 
 ### Config example for get doc content  
 [https://github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)  
