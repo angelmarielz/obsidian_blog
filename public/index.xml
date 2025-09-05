@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Terminal</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Terminal</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My Insane Blog Pipeline</title>
-      <link>/posts/my-insane-blog-pipeline/</link>
+      <title>MCP &amp; Vibe Coding</title>
+      <link>//localhost:1313/posts/mcp--vibe-coding/</link>
       <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/my-insane-blog-pipeline/</guid>
-      <description>&lt;h2 id=&#34;how-to-start&#34;&gt;How to start&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/panr/hugo-theme-terminal#how-to-start&#34;&gt;Link to start&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;You can download the theme manually by going to &lt;a href=&#34;https://github.com/panr/hugo-theme-terminal.git&#34;&gt;https://github.com/panr/hugo-theme-terminal.git&lt;/a&gt; and pasting it to &lt;code&gt;themes/terminal&lt;/code&gt; in your root directory.&lt;/p&gt;&#xA;&lt;p&gt;You can also choose &lt;strong&gt;one of the 3 possibilities&lt;/strong&gt; to install the theme:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;as Hugo Module&lt;/li&gt;&#xA;&lt;li&gt;as a standalone local directory&lt;/li&gt;&#xA;&lt;li&gt;as a git submodule&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;⚠️ The theme needs at least Hugo &lt;strong&gt;Extended&lt;/strong&gt; v0.90.x.&lt;/p&gt;&#xA;&lt;h3 id=&#34;install-theme-as-hugo-module&#34;&gt;Install theme as Hugo Module&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# If this is the first time you&amp;#39;re using Hugo Modules&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# in your project. You have to initiate your own module before&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# you fetch the theme module.&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# hugo mod init [your website/module name]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo mod get github.com/panr/hugo-theme-terminal/v4&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and in your config file add:&lt;/p&gt;</description>
+      <guid>//localhost:1313/posts/mcp--vibe-coding/</guid>
+      <description>&lt;h2 id=&#34;general-mcp-work-flow&#34;&gt;General MCP work flow&lt;/h2&gt;&#xA;&lt;p&gt;![[Pasted image 202509041.png.png]]&lt;/p&gt;&#xA;&lt;h2 id=&#34;mcp-in-ide&#34;&gt;MCP in IDE&lt;/h2&gt;&#xA;&lt;p&gt;歡迎凱大跟子勤!&lt;/p&gt;&#xA;&lt;h3 id=&#34;ide&#34;&gt;IDE&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Claude &lt;a href=&#34;https://www.cursor.com/&#34;&gt;https://www.cursor.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Windsurf &lt;a href=&#34;https://windsurf.com/pricing&#34;&gt;https://windsurf.com/pricing&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;TRAE &lt;a href=&#34;https://www.trae.ai/&#34;&gt;https://www.trae.ai/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;FireStudio &lt;a href=&#34;https://firestudio.space/&#34;&gt;https://firestudio.space/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;llm-model&#34;&gt;LLM Model&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Claude-3.7&lt;/li&gt;&#xA;&lt;li&gt;GPT-4o&lt;/li&gt;&#xA;&lt;li&gt;DeepSeek-V3&lt;/li&gt;&#xA;&lt;li&gt;Gemini-2.5 pro&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;![[Pasted image 202509042.png.png]]&lt;/p&gt;&#xA;&lt;h2 id=&#34;flow---ide-with-llm&#34;&gt;Flow - IDE with LLM&lt;/h2&gt;&#xA;&lt;p&gt;![[Pasted image 202509043.png.png]]&lt;/p&gt;&#xA;&lt;h2 id=&#34;flow---ide-with-llm-and-mcp&#34;&gt;Flow - IDE with LLM and MCP&lt;/h2&gt;&#xA;&lt;p&gt;![[Pasted image 202509045.png.png]]&lt;/p&gt;&#xA;&lt;h3 id=&#34;config-example-for-get-doc-content&#34;&gt;Config example for get doc content&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/modelcontextprotocol/servers&#34;&gt;https://github.com/modelcontextprotocol/servers&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;{&lt;br&gt;&#xA;&amp;ldquo;mcpServers&amp;rdquo;: {&lt;br&gt;&#xA;&amp;ldquo;LarkDocs&amp;rdquo;: {&lt;br&gt;&#xA;&amp;ldquo;command&amp;rdquo;: &amp;ldquo;npx&amp;rdquo;,&lt;br&gt;&#xA;&amp;ldquo;args&amp;rdquo;: [&lt;br&gt;&#xA;&amp;ldquo;-y&amp;rdquo;,&lt;br&gt;&#xA;&amp;ldquo;&amp;ndash;registry&amp;rdquo;,&lt;br&gt;&#xA;&amp;ldquo;http://bnpm.byted.org/&amp;rdquo;,&lt;br&gt;&#xA;&amp;ldquo;@byted/mcp-lark-docs@latest&amp;rdquo;&lt;br&gt;&#xA;],&lt;br&gt;&#xA;&amp;ldquo;env&amp;rdquo;: {&lt;br&gt;&#xA;&amp;ldquo;LARK_APP_ID&amp;rdquo;: &amp;ldquo;ididid&amp;rdquo;,&lt;br&gt;&#xA;&amp;ldquo;LARK_APP_SECRET&amp;rdquo;: &amp;ldquo;secret&amp;rdquo;,&lt;br&gt;&#xA;&amp;ldquo;AUTH_CALLBACK_PORT&amp;rdquo;: &amp;ldquo;&amp;rdquo;,&lt;br&gt;&#xA;&amp;ldquo;AUTH_CALLBACK_ENDPOINT&amp;rdquo;: &amp;quot;&amp;quot;&lt;br&gt;&#xA;}&lt;br&gt;&#xA;}&lt;br&gt;&#xA;}&lt;br&gt;&#xA;}&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>/posts/new-picture/</link>
+      <link>//localhost:1313/posts/second-note/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/posts/new-picture/</guid>
-      <description>&lt;p&gt;Da da da&lt;/p&gt;&#xA;&lt;p&gt;![[1358376.jpeg]]&lt;/p&gt;</description>
+      <guid>//localhost:1313/posts/second-note/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
