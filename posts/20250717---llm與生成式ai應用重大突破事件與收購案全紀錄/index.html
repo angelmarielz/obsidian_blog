@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title> :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="一、前言 自2021年GitHub Copilot問世以來，生成式AI與大型語言模型（LLM）應用經歷了爆炸性成長。這份報告從Copilot作為開端，系統梳理LLM及其應用的重大突破、代表性產品、技術演進、產業事件與收購案，涵蓋2021至2025年間的關鍵里程碑，並特別補充LLM驅動的搜尋與知識問答新服務、ComfyUI等工具定位、產業收購案與最新動態。
+二、重大產品、突破性功能與應用年表 2021：AI編程革命起點 GitHub Copilot 發布：2021 開發單位：GitHub（與OpenAI合作） 特色：首個大規模AI程式碼自動補全工具，整合於VS Code等IDE，支援多語言、自然語言描述轉程式碼，開啟AI輔助編程新時代。 影響：開發者生產力顯著提升，AI編程助手成為主流。 2022：ChatGPT引爆生成式AI熱潮 ChatGPT（OpenAI） 發布：2022年11月 特色：對話式AI，能自然流暢地與人互動，推動LLM應用普及。 BLOOM（BigScience） 發布：2022 特色：多語言開源LLM，推動AI民主化。 Warp 發布：2022 特色：AI驅動的現代終端機，支援指令建議與錯誤修正。 2023：多元LLM與開源生態崛起 GPT-4（OpenAI） 發布：2023 特色：多模態（文字&#43;圖片）、推理能力大幅提升，支援更長上下文。 LLaMA（Meta） 發布：2023 特色：多規模開源模型，推動開源LLM生態。 Claude（Anthropic） 發布：2023 特色：強調AI安全與可控性，對話體驗自然。 TRAE 發布：2023 特色：AI驅動的程式碼生成與重構工具，支援多種IDE。 2023-2024：ChatGPT文生圖與「吉卜力之亂」 ChatGPT整合DALL-E 3（文生圖）
+發布：2023年10月（ChatGPT Plus/Enterprise用戶）
+特色：用戶可直接在ChatGPT內以文字生成高品質圖片，無需複雜提示詞，支援多輪對話式調整。
+影響：大幅降低AI繪圖門檻，推動AI藝術創作普及。
+代表事件：「吉卜力之亂」
+時間：2024年初
+內容：用戶大量生成吉卜力風格圖片，引發網路瘋傳與爭議。導演宮崎駿公開批評AI藝術，社群討論AI對藝術創作與版權的衝擊，OpenAI雖設有限制但仍難完全防堵。
+意義：凸顯AI生成藝術的倫理、法律與產業衝擊，成為全球AI藝術討論焦點。
+2024-2025：多模態與影片生成AI時代 OpenAI Sora（文生影片） 發布：2024年12月（ChatGPT Plus/Pro用戶） 特色：首個大規模商用的文生影片模型，支援20秒（一般用戶）至1分鐘（專業用戶）1080p影片生成，支援多種比例、複雜場景、角色互動、時間延展、影片編輯（Remix、Recut、Storyboard等）。 影響：徹底改變內容創作、行銷、教育、娛樂等產業，讓影片製作門檻大幅降低，並引發深偽（deepfake）、版權等新型倫理與監管挑戰。 2024-2025：AI IDE與虛擬分身百家爭鳴 Cursor、Claude Code、Amazon Kiro、Gemini CLI、Warp等AI IDE 特色：AI原生IDE、命令列AI助手、規格驅動開發、即時多檔案操作、社群驅動快速迭代，推動開發者生產力革命。 Grok Avatar（xAI） 發布：2025年7月 特色：3D動畫虛擬分身（如Ani、Rudy），支援語音互動、情感模式、遊戲化進程，搶攻虛擬陪伴與娛樂市場。 2023-2025：專業創意與多模態應用 Canva Magic Studio 特色：AI設計工具集成，支援文字生成圖片、影片、圖形，自動去背、擴圖、物件移除。 Adobe Photoshop（Firefly） 特色：生成式AI（Firefly）整合，支援Generative Fill/Expand、AI物件偵測與編輯，成為專業創意產業標竿。 ComfyUI 定位：ComfyUI並非LLM模型，而是一個開源的圖形化AI工作流工具，主要用於影像生成（如Stable Diffusion），支援自訂節點、流程設計與多模型整合，廣受AI藝術家與創作者歡迎。 2024-2025：LLM驅動的搜尋與知識問答新服務 這一時期，LLM驅動的搜尋與知識問答服務百花齊放，以下為主要代表：
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/20250717---llm%E8%88%87%E7%94%9F%E6%88%90%E5%BC%8Fai%E6%87%89%E7%94%A8%E9%87%8D%E5%A4%A7%E7%AA%81%E7%A0%B4%E4%BA%8B%E4%BB%B6%E8%88%87%E6%94%B6%E8%B3%BC%E6%A1%88%E5%85%A8%E7%B4%80%E9%8C%84/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.775ac2af004d44c22a6d000fbd1d9af529642f5cef27399d0280d180af2c2e9b.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.310d32205bdedd6f43144e3c3273c9deecd238eba5f9108db5ea96ca0cfbe377.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.ad50c7f4d00e7975918f37fc74c6029e1959a40d66fb5b2c6564a8715e985573.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.e9ab635cf918bc84b901eb65c0b2caa74c9544245e3647c1af5c129896ef276e.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="一、前言 自2021年GitHub Copilot問世以來，生成式AI與大型語言模型（LLM）應用經歷了爆炸性成長。這份報告從Copilot作為開端，系統梳理LLM及其應用的重大突破、代表性產品、技術演進、產業事件與收購案，涵蓋2021至2025年間的關鍵里程碑，並特別補充LLM驅動的搜尋與知識問答新服務、ComfyUI等工具定位、產業收購案與最新動態。
+二、重大產品、突破性功能與應用年表 2021：AI編程革命起點 GitHub Copilot 發布：2021 開發單位：GitHub（與OpenAI合作） 特色：首個大規模AI程式碼自動補全工具，整合於VS Code等IDE，支援多語言、自然語言描述轉程式碼，開啟AI輔助編程新時代。 影響：開發者生產力顯著提升，AI編程助手成為主流。 2022：ChatGPT引爆生成式AI熱潮 ChatGPT（OpenAI） 發布：2022年11月 特色：對話式AI，能自然流暢地與人互動，推動LLM應用普及。 BLOOM（BigScience） 發布：2022 特色：多語言開源LLM，推動AI民主化。 Warp 發布：2022 特色：AI驅動的現代終端機，支援指令建議與錯誤修正。 2023：多元LLM與開源生態崛起 GPT-4（OpenAI） 發布：2023 特色：多模態（文字&#43;圖片）、推理能力大幅提升，支援更長上下文。 LLaMA（Meta） 發布：2023 特色：多規模開源模型，推動開源LLM生態。 Claude（Anthropic） 發布：2023 特色：強調AI安全與可控性，對話體驗自然。 TRAE 發布：2023 特色：AI驅動的程式碼生成與重構工具，支援多種IDE。 2023-2024：ChatGPT文生圖與「吉卜力之亂」 ChatGPT整合DALL-E 3（文生圖）
+發布：2023年10月（ChatGPT Plus/Enterprise用戶）
+特色：用戶可直接在ChatGPT內以文字生成高品質圖片，無需複雜提示詞，支援多輪對話式調整。
+影響：大幅降低AI繪圖門檻，推動AI藝術創作普及。
+代表事件：「吉卜力之亂」
+時間：2024年初
+內容：用戶大量生成吉卜力風格圖片，引發網路瘋傳與爭議。導演宮崎駿公開批評AI藝術，社群討論AI對藝術創作與版權的衝擊，OpenAI雖設有限制但仍難完全防堵。
+意義：凸顯AI生成藝術的倫理、法律與產業衝擊，成為全球AI藝術討論焦點。
+2024-2025：多模態與影片生成AI時代 OpenAI Sora（文生影片） 發布：2024年12月（ChatGPT Plus/Pro用戶） 特色：首個大規模商用的文生影片模型，支援20秒（一般用戶）至1分鐘（專業用戶）1080p影片生成，支援多種比例、複雜場景、角色互動、時間延展、影片編輯（Remix、Recut、Storyboard等）。 影響：徹底改變內容創作、行銷、教育、娛樂等產業，讓影片製作門檻大幅降低，並引發深偽（deepfake）、版權等新型倫理與監管挑戰。 2024-2025：AI IDE與虛擬分身百家爭鳴 Cursor、Claude Code、Amazon Kiro、Gemini CLI、Warp等AI IDE 特色：AI原生IDE、命令列AI助手、規格驅動開發、即時多檔案操作、社群驅動快速迭代，推動開發者生產力革命。 Grok Avatar（xAI） 發布：2025年7月 特色：3D動畫虛擬分身（如Ani、Rudy），支援語音互動、情感模式、遊戲化進程，搶攻虛擬陪伴與娛樂市場。 2023-2025：專業創意與多模態應用 Canva Magic Studio 特色：AI設計工具集成，支援文字生成圖片、影片、圖形，自動去背、擴圖、物件移除。 Adobe Photoshop（Firefly） 特色：生成式AI（Firefly）整合，支援Generative Fill/Expand、AI物件偵測與編輯，成為專業創意產業標竿。 ComfyUI 定位：ComfyUI並非LLM模型，而是一個開源的圖形化AI工作流工具，主要用於影像生成（如Stable Diffusion），支援自訂節點、流程設計與多模型整合，廣受AI藝術家與創作者歡迎。 2024-2025：LLM驅動的搜尋與知識問答新服務 這一時期，LLM驅動的搜尋與知識問答服務百花齊放，以下為主要代表：
+" />
+<meta property="og:url" content="/posts/20250717---llm%E8%88%87%E7%94%9F%E6%88%90%E5%BC%8Fai%E6%87%89%E7%94%A8%E9%87%8D%E5%A4%A7%E7%AA%81%E7%A0%B4%E4%BA%8B%E4%BB%B6%E8%88%87%E6%94%B6%E8%B3%BC%E6%A1%88%E5%85%A8%E7%B4%80%E9%8C%84/" />
+<meta property="og:site_name" content="Terminal" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/20250717---llm%E8%88%87%E7%94%9F%E6%88%90%E5%BC%8Fai%E6%87%89%E7%94%A8%E9%87%8D%E5%A4%A7%E7%AA%81%E7%A0%B4%E4%BA%8B%E4%BB%B6%E8%88%87%E6%94%B6%E8%B3%BC%E6%A1%88%E5%85%A8%E7%B4%80%E9%8C%84/"></a>
+  </h1>
+  <div class="post-meta"></div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="一前言">一、前言<a href="#一前言" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>自2021年GitHub Copilot問世以來，生成式AI與大型語言模型（LLM）應用經歷了爆炸性成長。這份報告從Copilot作為開端，系統梳理LLM及其應用的重大突破、代表性產品、技術演進、產業事件與收購案，涵蓋2021至2025年間的關鍵里程碑，並特別補充LLM驅動的搜尋與知識問答新服務、ComfyUI等工具定位、產業收購案與最新動態。</p>
+<hr>
+<h2 id="二重大產品突破性功能與應用年表">二、重大產品、突破性功能與應用年表<a href="#二重大產品突破性功能與應用年表" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="2021ai編程革命起點">2021：AI編程革命起點<a href="#2021ai編程革命起點" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>GitHub Copilot</strong></li>
+<li><strong>發布</strong>：2021</li>
+<li><strong>開發單位</strong>：GitHub（與OpenAI合作）</li>
+<li><strong>特色</strong>：首個大規模AI程式碼自動補全工具，整合於VS Code等IDE，支援多語言、自然語言描述轉程式碼，開啟AI輔助編程新時代。</li>
+<li><strong>影響</strong>：開發者生產力顯著提升，AI編程助手成為主流。</li>
+</ul>
+<hr>
+<h3 id="2022chatgpt引爆生成式ai熱潮">2022：ChatGPT引爆生成式AI熱潮<a href="#2022chatgpt引爆生成式ai熱潮" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>ChatGPT（OpenAI）</strong></li>
+<li><strong>發布</strong>：2022年11月</li>
+<li><strong>特色</strong>：對話式AI，能自然流暢地與人互動，推動LLM應用普及。</li>
+<li><strong>BLOOM（BigScience）</strong></li>
+<li><strong>發布</strong>：2022</li>
+<li><strong>特色</strong>：多語言開源LLM，推動AI民主化。</li>
+<li><strong>Warp</strong></li>
+<li><strong>發布</strong>：2022</li>
+<li><strong>特色</strong>：AI驅動的現代終端機，支援指令建議與錯誤修正。</li>
+</ul>
+<hr>
+<h3 id="2023多元llm與開源生態崛起">2023：多元LLM與開源生態崛起<a href="#2023多元llm與開源生態崛起" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>GPT-4（OpenAI）</strong></li>
+<li><strong>發布</strong>：2023</li>
+<li><strong>特色</strong>：多模態（文字+圖片）、推理能力大幅提升，支援更長上下文。</li>
+<li><strong>LLaMA（Meta）</strong></li>
+<li><strong>發布</strong>：2023</li>
+<li><strong>特色</strong>：多規模開源模型，推動開源LLM生態。</li>
+<li><strong>Claude（Anthropic）</strong></li>
+<li><strong>發布</strong>：2023</li>
+<li><strong>特色</strong>：強調AI安全與可控性，對話體驗自然。</li>
+<li><strong>TRAE</strong></li>
+<li><strong>發布</strong>：2023</li>
+<li><strong>特色</strong>：AI驅動的程式碼生成與重構工具，支援多種IDE。</li>
+</ul>
+<hr>
+<h3 id="2023-2024chatgpt文生圖與吉卜力之亂">2023-2024：ChatGPT文生圖與「吉卜力之亂」<a href="#2023-2024chatgpt文生圖與吉卜力之亂" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li>
+<p><strong>ChatGPT整合DALL-E 3（文生圖）</strong></p>
+</li>
+<li>
+<p><strong>發布</strong>：2023年10月（ChatGPT Plus/Enterprise用戶）</p>
+</li>
+<li>
+<p><strong>特色</strong>：用戶可直接在ChatGPT內以文字生成高品質圖片，無需複雜提示詞，支援多輪對話式調整。</p>
+</li>
+<li>
+<p><strong>影響</strong>：大幅降低AI繪圖門檻，推動AI藝術創作普及。</p>
+</li>
+<li>
+<p><strong>代表事件：「吉卜力之亂」</strong></p>
+</li>
+<li>
+<p><strong>時間</strong>：2024年初</p>
+</li>
+<li>
+<p><strong>內容</strong>：用戶大量生成吉卜力風格圖片，引發網路瘋傳與爭議。導演宮崎駿公開批評AI藝術，社群討論AI對藝術創作與版權的衝擊，OpenAI雖設有限制但仍難完全防堵。</p>
+</li>
+<li>
+<p><strong>意義</strong>：凸顯AI生成藝術的倫理、法律與產業衝擊，成為全球AI藝術討論焦點。</p>
+</li>
+</ul>
+<hr>
+<h3 id="2024-2025多模態與影片生成ai時代">2024-2025：多模態與影片生成AI時代<a href="#2024-2025多模態與影片生成ai時代" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>OpenAI Sora（文生影片）</strong></li>
+<li><strong>發布</strong>：2024年12月（ChatGPT Plus/Pro用戶）</li>
+<li><strong>特色</strong>：首個大規模商用的文生影片模型，支援20秒（一般用戶）至1分鐘（專業用戶）1080p影片生成，支援多種比例、複雜場景、角色互動、時間延展、影片編輯（Remix、Recut、Storyboard等）。</li>
+<li><strong>影響</strong>：徹底改變內容創作、行銷、教育、娛樂等產業，讓影片製作門檻大幅降低，並引發深偽（deepfake）、版權等新型倫理與監管挑戰。</li>
+</ul>
+<hr>
+<h3 id="2024-2025ai-ide與虛擬分身百家爭鳴">2024-2025：AI IDE與虛擬分身百家爭鳴<a href="#2024-2025ai-ide與虛擬分身百家爭鳴" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>Cursor、Claude Code、Amazon Kiro、Gemini CLI、Warp等AI IDE</strong></li>
+<li><strong>特色</strong>：AI原生IDE、命令列AI助手、規格驅動開發、即時多檔案操作、社群驅動快速迭代，推動開發者生產力革命。</li>
+<li><strong>Grok Avatar（xAI）</strong></li>
+<li><strong>發布</strong>：2025年7月</li>
+<li><strong>特色</strong>：3D動畫虛擬分身（如Ani、Rudy），支援語音互動、情感模式、遊戲化進程，搶攻虛擬陪伴與娛樂市場。</li>
+</ul>
+<hr>
+<h3 id="2023-2025專業創意與多模態應用">2023-2025：專業創意與多模態應用<a href="#2023-2025專業創意與多模態應用" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>Canva Magic Studio</strong></li>
+<li><strong>特色</strong>：AI設計工具集成，支援文字生成圖片、影片、圖形，自動去背、擴圖、物件移除。</li>
+<li><strong>Adobe Photoshop（Firefly）</strong></li>
+<li><strong>特色</strong>：生成式AI（Firefly）整合，支援Generative Fill/Expand、AI物件偵測與編輯，成為專業創意產業標竿。</li>
+<li><strong>ComfyUI</strong></li>
+<li><strong>定位</strong>：ComfyUI並非LLM模型，而是一個開源的圖形化AI工作流工具，主要用於影像生成（如Stable Diffusion），支援自訂節點、流程設計與多模型整合，廣受AI藝術家與創作者歡迎。</li>
+</ul>
+<hr>
+<h3 id="2024-2025llm驅動的搜尋與知識問答新服務">2024-2025：LLM驅動的搜尋與知識問答新服務<a href="#2024-2025llm驅動的搜尋與知識問答新服務" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>這一時期，LLM驅動的搜尋與知識問答服務百花齊放，以下為主要代表：</p>
+<ul>
+<li><strong><a href="http://You.com">You.com</a></strong></li>
+<li><strong>創辦人</strong>：Richard Socher（前Salesforce首席科學家）</li>
+<li><strong>特色</strong>：LLM驅動的搜尋引擎，主打可自訂搜尋體驗、隱私保護、整合多種應用（如翻譯、摘要、程式碼生成），用戶可自選優先來源，強調互動性與個人化。</li>
+<li><strong>Perplexity AI</strong></li>
+<li><strong>創辦人</strong>：Aravind Srinivas（前OpenAI研究員）、Denis Yarats、Johnny Ho、Andy Konwinski</li>
+<li><strong>特色</strong>：AI驅動搜尋與問答平台，直接以自然語言回答問題並附上來源引用，支援多模態（文字、圖片、程式碼），可追問、即時查詢、切換多種搜尋模式（如學術、寫作、社群），強調透明度與即時性。</li>
+<li><strong>Liner Deep Research</strong></li>
+<li><strong>創辦人</strong>：David Kim</li>
+<li><strong>特色</strong>：主打高精度AI深度研究，聚合50+學術資料庫，生成帶有圖表、表格的完整報告，精度超越Perplexity Deep Research與GPT-4.5等。</li>
+<li><strong>ChatGPT Deep Research</strong></li>
+<li><strong>開發者</strong>：OpenAI</li>
+<li><strong>特色</strong>：ChatGPT的「Deep Research」模式，能自動進行多步網路搜尋、內容分析與結構化報告生成，適合複雜多面向問題。</li>
+<li><strong>Google Deep Research（Gemini）</strong></li>
+<li><strong>開發者</strong>：Google DeepMind</li>
+<li><strong>特色</strong>：Gemini AI助手內建「Deep Research」功能，能自動化多步網路研究，彙整多元觀點，生成結構化報告，並與Google搜尋深度整合。</li>
+<li><strong>xAI Grok</strong></li>
+<li><strong>創辦人</strong>：Elon Musk</li>
+<li><strong>特色</strong>：整合即時資料來源，支援語音、視覺互動，強調即時推理與解釋能力，適合技術用戶與即時數據分析。</li>
+</ul>
+<hr>
+<h3 id="2025其他突破性應用與產業事件">2025：其他突破性應用與產業事件<a href="#2025其他突破性應用與產業事件" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>AWS Agentic AI</strong>：自動化複雜商業流程的AI代理人，推動企業自動化。</li>
+<li><strong>Google Big Sleep</strong>：AI主動防禦網路安全威脅。</li>
+<li><strong>Lloyds Bank Athena</strong>：生成式AI客服與內部營運助理。</li>
+<li><strong>AI醫療應用</strong>：糖尿病視網膜病變AI篩檢。</li>
+<li><strong>Bloomberg AI預算平台</strong>：提升政府預算透明度。</li>
+<li><strong>SoundHound AI語音醫療助理</strong>。</li>
+<li><strong>Microsoft Copilot Vision</strong>：桌面視覺自動化。</li>
+<li><strong>Delta AI航班優化</strong>、<strong>Nvidia H20中國重啟</strong>、<strong>美國AI軍事整合</strong>等。</li>
+</ul>
+<hr>
+<h2 id="三重大收購案與產業整併">三、重大收購案與產業整併<a href="#三重大收購案與產業整併" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="1-base44被wix以8000萬美元現金收購2025年6月">1. Base44被Wix以8000萬美元現金收購（2025年6月）<a href="#1-base44被wix以8000萬美元現金收購2025年6月" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>背景</strong>：Base44由以色列開發者Maor Shlomo於2025年1月創立，主打「vibe coding」——用自然語言描述需求即可自動生成應用程式，6個月內用戶數達25萬，月利潤近19萬美元。</li>
+<li><strong>收購細節</strong>：Wix以8000萬美元現金收購Base44，另有2500萬美元員工留任獎金。Base44將維持獨立品牌與產品線，並整合至Wix生態系，推動AI驅動的無程式碼軟體開發。</li>
+<li><strong>意義</strong>：反映AI驅動「意圖即軟體」的趨勢，讓非技術用戶也能用自然語言創建複雜應用[[TechCrunch]]。</li>
+</ul>
+<h3 id="2-windsurf被cognition收購2025年">2. Windsurf被Cognition收購（2025年）<a href="#2-windsurf被cognition收購2025年" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>背景</strong>：Windsurf為AI開發工具新創，主打agentic IDE。2025年Google以24億美元「反向收購」方式挖角其CEO與核心團隊，留下大部分員工與資產。</li>
+<li><strong>收購細節</strong>：Cognition（AI coding agent Devin開發商）隨後收購Windsurf剩餘團隊、產品、品牌與IP，整合其IDE與Devin，強化AI程式開發全流程能力。Windsurf年化營收達8200萬美元，企業ARR季增一倍。</li>
+<li><strong>意義</strong>：AI IDE市場競爭白熱化，人才與技術成為收購主因，產業加速整併。</li>
+</ul>
+<h3 id="3-meta收購scale-ai-49股權2025年6月">3. Meta收購Scale AI 49%股權（2025年6月）<a href="#3-meta收購scale-ai-49股權2025年6月" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>內容</strong>：Meta以148億美元收購Scale AI 49%股權，Scale AI CEO領導Meta「超級智能」計畫，強化數據標註、模型評估與微調能力，追趕OpenAI與Google。</li>
+<li><strong>意義</strong>：資料供應鏈與模型微調能力成為AI競爭關鍵，供應商中立性與資料安全成為新議題。</li>
+</ul>
+<h3 id="4-其他產業併購趨勢">4. 其他產業併購趨勢<a href="#4-其他產業併購趨勢" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>美國主導</strong>：2021-2023年美國佔AI併購案66%，Alphabet、Apple、Databricks、Microsoft等積極收購AI新創。</li>
+<li><strong>Acqui-hiring</strong>：搶人才成為併購主因，企業希望掌握AI全產業鏈。</li>
+</ul>
+<hr>
+<h2 id="四產業事件與趨勢">四、產業事件與趨勢<a href="#四產業事件與趨勢" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="1-apple放棄自家ai模型轉用openai模型2024-2025">1. Apple放棄自家AI模型，轉用OpenAI模型（2024-2025）<a href="#1-apple放棄自家ai模型轉用openai模型2024-2025" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>背景</strong>：Apple長期強調自研技術與隱私，但在AI領域進展緩慢，Siri功能落後於競爭對手。</li>
+<li><strong>事件</strong>：2024-2025年，Apple宣布與OpenAI合作，將ChatGPT等先進LLM整合至Siri與iOS生態，並以用戶隱私為前提設計資料流通與授權機制。</li>
+<li><strong>意義</strong>：標誌著Apple策略轉型，優先用戶體驗與AI能力，反映AI競爭壓力與產業合作新格局。</li>
+</ul>
+<h3 id="2-llm應用與產業落地">2. LLM應用與產業落地<a href="#2-llm應用與產業落地" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>內容創作</strong>：自動生成文章、廣告、商品描述。</li>
+<li><strong>客服自動化</strong>：AI助理自動回應、分類、提升效率。</li>
+<li><strong>多語言翻譯</strong>：即時高品質翻譯。</li>
+<li><strong>音訊/影片分析</strong>：自動摘要、重點提取。</li>
+<li><strong>教育</strong>：AI輔助教學、個人化學習。</li>
+<li><strong>資安/詐欺偵測</strong>：AI分析威脅、反洗錢。</li>
+<li><strong>多模態應用</strong>：文字、圖片、音訊、影片整合。</li>
+<li><strong>專業領域LLM</strong>：企業自訂LLM，提升專業任務準確度。</li>
+<li><strong>自主代理人</strong>：AI自動執行複雜任務。</li>
+</ul>
+<h3 id="3-法規與倫理爭議">3. 法規與倫理爭議<a href="#3-法規與倫理爭議" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>歐盟AI法規草案</strong>：強調透明、公平、問責。</li>
+<li><strong>產業領袖呼籲監管</strong>：OpenAI、Microsoft等高層公開支持AI監管。</li>
+<li><strong>演算法偏見、隱私、就業衝擊</strong>：成為AI倫理討論核心。</li>
+<li><strong>AI藝術與版權爭議</strong>：「吉卜力之亂」成為全球焦點。</li>
+</ul>
+<hr>
+<h2 id="五總結">五、總結<a href="#五總結" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>從2021年GitHub Copilot開啟AI編程新時代，到2025年多模態LLM、AI IDE、虛擬分身、專業創意工具、影片生成模型（Sora）、AI代理人、產業整併與監管爭議百花齊放，LLM與生成式AI應用已深刻改變軟體開發、內容創作、設計、客服、教育、資安等各大產業。You.com、Perplexity、Liner Deep Research、Grok等新型AI搜尋與知識問答服務挑戰傳統搜尋，Base44、Windsurf等新創被巨頭收購，Apple也轉向與OpenAI合作。AI不僅是輔助工具，更成為人類創意與生產力的加速器，未來隨著模型能力與應用場景持續擴展，AI將在更多領域釋放顛覆性潛力。</p>
+<hr>
+<p><strong>（本報告依據2021-2025年間LLM及其應用的公開資訊、產業報告與實際案例整理，數據與產品特色均來自多方研究與實證）</strong></p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/20250710---crewai/" class="button inline prev">
+        &lt; [<span class="button__text"></span>]
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/20250731---stablecoin/" class="button inline next">
+         [<span class="button__text"></span>] &gt;
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
