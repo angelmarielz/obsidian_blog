@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title> :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="穩定幣 StableCoin 是什麼 是一種加密貨幣，其設計目的是保持價格穩定，通常與某種「穩定資產」掛鉤，例如美元、歐元、黃金等。
+它的目標是結合 法幣的穩定性 與 加密貨幣的效率（例如快速轉帳、去中心化、全球性）來提供更好的使用體驗。
+常見的穩定幣分類與運作機制 1. 法幣抵押型（Fiat-collateralized） 這類穩定幣是由實體資產（例如美元）作為儲備支持發行的。
+💡例子： USDT（Tether）、USDC（Circle）、BUSD（Binance）
+🏦機制：
+每發行 1 顆穩定幣，背後有等值 1 美元的法幣存在銀行帳戶中。
+用戶可以用法幣購買穩定幣，或用穩定幣兌回法幣。
+✅ 優點： 價格穩定、高流通性。
+❌ 缺點： 需信任中心機構（儲備是否真的存在）、可能受到監管風險。
+2. 加密資產抵押型（Crypto-collateralized） 這類穩定幣是由加密資產（如 ETH）作為擔保品，透過智能合約發行。
+💡例子： DAI（由 MakerDAO 發行）
+⚙️機制：
+用戶將加密貨幣（如 ETH）鎖進智能合約中，合約會根據抵押比例發行穩定幣。
+若市場劇烈波動，系統會自動清算以維持穩定幣價值。
+✅ 優點： 去中心化、透明。
+❌ 缺點： 抵押率通常較高（超額抵押）、價值不一定完全穩定。
+3. 演算法穩定幣（Algorithmic Stablecoins） 這類穩定幣不依賴任何抵押資產，而是透過演算法調節供需來穩定價格。
+💡例子： 曾經的 UST（Terra）、AMPL、FRAX（部分演算法）
+🧠機制：
+當穩定幣價格高於目標（如 $1），系統會增加供應（印更多幣）。
+當價格低於目標，系統減少供應（回收幣或燒毀幣）。
+✅ 優點： 不需要資產抵押，更去中心化。
+❌ 缺點： 容易崩盤（如 UST 在2022年大幅失控）。
+穩定幣的應用場景 穩定幣目前的規模 2500 億美元
+2030 - 4 萬億 (70%)
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/20250731---stablecoin/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.775ac2af004d44c22a6d000fbd1d9af529642f5cef27399d0280d180af2c2e9b.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.310d32205bdedd6f43144e3c3273c9deecd238eba5f9108db5ea96ca0cfbe377.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.ad50c7f4d00e7975918f37fc74c6029e1959a40d66fb5b2c6564a8715e985573.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.e9ab635cf918bc84b901eb65c0b2caa74c9544245e3647c1af5c129896ef276e.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="穩定幣 StableCoin 是什麼 是一種加密貨幣，其設計目的是保持價格穩定，通常與某種「穩定資產」掛鉤，例如美元、歐元、黃金等。
+它的目標是結合 法幣的穩定性 與 加密貨幣的效率（例如快速轉帳、去中心化、全球性）來提供更好的使用體驗。
+常見的穩定幣分類與運作機制 1. 法幣抵押型（Fiat-collateralized） 這類穩定幣是由實體資產（例如美元）作為儲備支持發行的。
+💡例子： USDT（Tether）、USDC（Circle）、BUSD（Binance）
+🏦機制：
+每發行 1 顆穩定幣，背後有等值 1 美元的法幣存在銀行帳戶中。
+用戶可以用法幣購買穩定幣，或用穩定幣兌回法幣。
+✅ 優點： 價格穩定、高流通性。
+❌ 缺點： 需信任中心機構（儲備是否真的存在）、可能受到監管風險。
+2. 加密資產抵押型（Crypto-collateralized） 這類穩定幣是由加密資產（如 ETH）作為擔保品，透過智能合約發行。
+💡例子： DAI（由 MakerDAO 發行）
+⚙️機制：
+用戶將加密貨幣（如 ETH）鎖進智能合約中，合約會根據抵押比例發行穩定幣。
+若市場劇烈波動，系統會自動清算以維持穩定幣價值。
+✅ 優點： 去中心化、透明。
+❌ 缺點： 抵押率通常較高（超額抵押）、價值不一定完全穩定。
+3. 演算法穩定幣（Algorithmic Stablecoins） 這類穩定幣不依賴任何抵押資產，而是透過演算法調節供需來穩定價格。
+💡例子： 曾經的 UST（Terra）、AMPL、FRAX（部分演算法）
+🧠機制：
+當穩定幣價格高於目標（如 $1），系統會增加供應（印更多幣）。
+當價格低於目標，系統減少供應（回收幣或燒毀幣）。
+✅ 優點： 不需要資產抵押，更去中心化。
+❌ 缺點： 容易崩盤（如 UST 在2022年大幅失控）。
+穩定幣的應用場景 穩定幣目前的規模 2500 億美元
+2030 - 4 萬億 (70%)
+" />
+<meta property="og:url" content="/posts/20250731---stablecoin/" />
+<meta property="og:site_name" content="Terminal" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/20250731---stablecoin/"></a>
+  </h1>
+  <div class="post-meta"></div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="穩定幣-stablecoin-是什麼">穩定幣 StableCoin 是什麼<a href="#穩定幣-stablecoin-是什麼" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>是一種加密貨幣，其設計目的是<strong>保持價格穩定</strong>，通常與某種「穩定資產」掛鉤，例如美元、歐元、黃金等。<br>
+它的目標是結合 法幣的穩定性 與 加密貨幣的效率（例如快速轉帳、去中心化、全球性）來提供更好的使用體驗。</p>
+<h2 id="常見的穩定幣分類與運作機制">常見的穩定幣分類與運作機制<a href="#常見的穩定幣分類與運作機制" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="1-法幣抵押型fiat-collateralized">1. 法幣抵押型（Fiat-collateralized）<a href="#1-法幣抵押型fiat-collateralized" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>這類穩定幣是<strong>由實體資產（例如美元）作為儲備</strong>支持發行的。</p>
+<ul>
+<li>
+<p>💡<strong>例子：</strong> USDT（Tether）、USDC（Circle）、BUSD（Binance）</p>
+</li>
+<li>
+<p>🏦<strong>機制：</strong></p>
+</li>
+<li>
+<p>每發行 1 顆穩定幣，背後有等值 1 美元的法幣存在銀行帳戶中。</p>
+</li>
+<li>
+<p>用戶可以用法幣購買穩定幣，或用穩定幣兌回法幣。</p>
+</li>
+<li>
+<p>✅ <strong>優點：</strong> 價格穩定、高流通性。</p>
+</li>
+<li>
+<p>❌ <strong>缺點：</strong> 需信任中心機構（儲備是否真的存在）、可能受到監管風險。</p>
+</li>
+</ul>
+<hr>
+<h3 id="2-加密資產抵押型crypto-collateralized">2. <strong>加密資產抵押型（Crypto-collateralized）</strong><a href="#2-加密資產抵押型crypto-collateralized" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>這類穩定幣是由<strong>加密資產（如 ETH）作為擔保品</strong>，透過智能合約發行。</p>
+<ul>
+<li>
+<p>💡<strong>例子：</strong> DAI（由 MakerDAO 發行）</p>
+</li>
+<li>
+<p>⚙️<strong>機制：</strong></p>
+</li>
+<li>
+<p>用戶將加密貨幣（如 ETH）鎖進智能合約中，合約會根據抵押比例發行穩定幣。</p>
+</li>
+<li>
+<p>若市場劇烈波動，系統會自動清算以維持穩定幣價值。</p>
+</li>
+<li>
+<p>✅ <strong>優點：</strong> 去中心化、透明。</p>
+</li>
+<li>
+<p>❌ <strong>缺點：</strong> 抵押率通常較高（超額抵押）、價值不一定完全穩定。</p>
+</li>
+</ul>
+<hr>
+<h3 id="3-演算法穩定幣algorithmic-stablecoins">3. <strong>演算法穩定幣（Algorithmic Stablecoins）</strong><a href="#3-演算法穩定幣algorithmic-stablecoins" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>這類穩定幣<strong>不依賴任何抵押資產</strong>，而是透過演算法調節供需來穩定價格。</p>
+<ul>
+<li>
+<p>💡<strong>例子：</strong> 曾經的 UST（Terra）、AMPL、FRAX（部分演算法）</p>
+</li>
+<li>
+<p>🧠<strong>機制：</strong></p>
+</li>
+<li>
+<p>當穩定幣價格高於目標（如 $1），系統會增加供應（印更多幣）。</p>
+</li>
+<li>
+<p>當價格低於目標，系統減少供應（回收幣或燒毀幣）。</p>
+</li>
+<li>
+<p>✅ <strong>優點：</strong> 不需要資產抵押，更去中心化。</p>
+</li>
+<li>
+<p>❌ <strong>缺點：</strong> 容易崩盤（如 UST 在2022年大幅失控）。</p>
+</li>
+</ul>
+<h2 id="穩定幣的應用場景">穩定幣的應用場景<a href="#穩定幣的應用場景" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>穩定幣目前的規模 2500 億美元<br>
+2030 - 4 萬億 (70%)</p>
+<ol>
+<li>跨境支付
+<ol>
+<li>SWIFT 系統速度慢 + 成本高, 且缺乏透明度</li>
+</ol>
+</li>
+<li>繞開資本管控的穩定價值貨幣
+<ol>
+<li>目標客群 - 高通脹的國家有很高的美元穩定幣需求
+<ol>
+<li>土耳其 2023 使用法幣購買的穩定幣規模已達 GDP 的 3.7%</li>
+<li>嚴格管制外匯的國家 (ex: 中國, 俄羅斯) 也有需求</li>
+</ol>
+</li>
+<li>這類需求短期可行, 長期可能會被監管所制約.</li>
+</ol>
+</li>
+<li>企業通過穩定幣來繞過傳統支付系統
+<ol>
+<li>Walmart, Meta &amp; Amazon</li>
+</ol>
+</li>
+<li>幣圈內部的使用</li>
+</ol>
+<p>!<img src="/images/Pasted%20image%20202509131.png.png" alt="Image Description"></p>
+<p><a href="https://insights4vc.substack.com/p/can-stablecoins-reshape-global-finance">https://insights4vc.substack.com/p/can-stablecoins-reshape-global-finance</a></p>
+<h2 id="穩定幣的缺點">穩定幣的缺點<a href="#穩定幣的缺點" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>穩定幣的發展其實已經有 10 多年, 為何一直沒有火起來?</p>
+<ol>
+<li>多穩定幣發行商沒有合格的抵押品支撐, 風險不匹配
+<ol>
+<li>USDT 發行商 Tether - 85% 美元美債 + 15% 風險資產</li>
+<li>其他可能完全沒有抵押</li>
+</ol>
+</li>
+<li>沒有一個資訊的紕漏標準</li>
+<li>幣圈外的人來說很不方便
+<ol>
+<li>流程繁瑣</li>
+<li>有一點學習門檻 (公司鑰, 錢包地址)</li>
+<li>丟失密鑰後果嚴重</li>
+<li>接收方也要有錢包或交易所帳戶</li>
+<li>國家政策阻撓</li>
+</ol>
+</li>
+</ol>
+<h2 id="穩定幣為何突然火了">穩定幣為何突然火了<a href="#穩定幣為何突然火了" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>天才法案 - <a href="https://www.morganlewis.com/pubs/2025/07/genius-act-passes-in-us-congress-a-breakdown-of-the-landmark-stablecoin-law">https://www.morganlewis.com/pubs/2025/07/genius-act-passes-in-us-congress-a-breakdown-of-the-landmark-stablecoin-law</a></p>
+<p>!<img src="/images/Pasted%20image%20202509132.png.png" alt="Image Description"></p>
+<ol>
+<li>保證穩定幣 100% 的價值 : Cash + 3-month T-Bill</li>
+<li>提高穩定幣發行商的透明度 - 定期找第三方審計</li>
+<li>要求穩定幣不能用發股息來吸引用戶 - 也不想搶銀行生意</li>
+</ol>
+<p>Takeaways 是什麼?<br>
+區塊鏈技術 + 跨境支付 + 監管 → 大勢所趨</p>
+<h2 id="誰因此受益">誰因此受益?<a href="#誰因此受益" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>穩定幣發行商 Tether &amp; Circle</p>
+<h3 id="tether---usdt-發行商">Tether - USDT 發行商<a href="#tether---usdt-發行商" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>2014 年成立, 建立於英屬維京群島, 瑞士運營</li>
+<li>穩定幣有 1600 億的流動市值, 市佔率 65%</li>
+<li>亞洲等灰色市場有壟斷能力</li>
+<li>還未上市</li>
+</ol>
+<p>Tether 優勢在於因為是 pioneer, 所以市占率超大</p>
+<p>!<img src="/images/Pasted%20image%20202509133.png.png" alt="Image Description"></p>
+<p>Tether 問題如下:</p>
+<ol>
+<li>監管透明度都很低</li>
+<li>15 % 是風險資產</li>
+</ol>
+<p>!<img src="/images/Pasted%20image%20202509134.png.png" alt="Image Description"></p>
+<h3 id="circle---usdc-發行商">Circle - USDC 發行商<a href="#circle---usdc-發行商" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>2013 年在美國成立, 2018 年才開始做穩定幣</li>
+<li>穩定幣有 600 億的流動市值, 市佔率 25%</li>
+</ol>
+<p>!<img src="/images/Pasted%20image%20202509135.png.png" alt="Image Description"></p>
+<p>Circle 優勢 - 因為很乖, 所以天才法案反而放大他的乖</p>
+<ol>
+<li>非常主動的紕漏公司信息 - Deloitte</li>
+<li>公司抵押資產合規</li>
+<li>擁有州級牌照 / 聯邦信託銀行背書 - SEC, FinCEN</li>
+</ol>
+<p>Circle 的商業模式是什麼</p>
+<ol>
+<li>97% 收入來自 USDC 儲備利息收益 (Reserved Yield)
+<ol>
+<li>Ex: Circle 發行 600 億美元的 USDC - 拿來買 T-Bill 4.23% - 年化收益 ~ 25 億美元</li>
+</ol>
+</li>
+<li>USDC 需求提高, 就有更多錢買美債, 大幅提高國債利息收入
+<ol>
+<li>假設 Circle 市佔率不變, 理論上能保持超高增長 70%</li>
+</ol>
+</li>
+</ol>
+<p><strong>Circle 風險是什麼?</strong>
+!<img src="/images/Pasted%20image%20202509136.png.png" alt="Image Description"></p>
+<ol>
+<li>收入高但是利潤低
+<ol>
+<li>USDC 2018 年是 Coinbase &amp; Circle 共同開發的
+<ol>
+<li>Circle 提供技術</li>
+<li>Coinbase 部分技術 + 渠道</li>
+<li>Circle 為了跟 Coinbase 合作, 簽了一份喪權辱國的分成協議
+<ol>
+<li>Coinbase 上的 USDC - 利息 100% 給 Coinbase</li>
+<li>不在 Coinbase 上的 USDC - 利息 50% 給 Coinbase</li>
+</ol>
+</li>
+<li>除非 Coinbase 同意, 否則 Circle 不能擺脫這些協議</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Circle 分發成本只會更高
+<ol>
+<li>JPM 認為當 Circle 與更多平台簽署分銷協議, 抽成會更高</li>
+<li>美聯儲減息風險</li>
+<li>競爭 - 技術不困難
+<ol>
+<li>他的優勢現在在透明的紕漏 + 主動迎合監管 + 美資企業 → 市占率第二, 沒有因為天才法案而賠錢 (Ex: OKX 交易所). 但就是短期</li>
+<li>傳統支付巨頭加入競爭 Walmart mastercard amazon costco visa meta</li>
+</ol>
+</li>
+<li>現在估值太高 壓縮未來收益潛力
+<ol>
+<li>收入 16 億 利潤 1.5 億</li>
+<li>估值 450 億</li>
+<li>28 倍 PS, 300 倍 PE</li>
+</ol>
+</li>
+<li>!<img src="/images/Pasted%20image%20202509137.png.png" alt="Image Description"></li>
+</ol>
+</li>
+</ol>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/20250717---llm%E8%88%87%E7%94%9F%E6%88%90%E5%BC%8Fai%E6%87%89%E7%94%A8%E9%87%8D%E5%A4%A7%E7%AA%81%E7%A0%B4%E4%BA%8B%E4%BB%B6%E8%88%87%E6%94%B6%E8%B3%BC%E6%A1%88%E5%85%A8%E7%B4%80%E9%8C%84/" class="button inline prev">
+        &lt; [<span class="button__text"></span>]
+      </a>
+    
+    
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
