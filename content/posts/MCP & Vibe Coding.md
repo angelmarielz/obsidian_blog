@@ -5,6 +5,7 @@ draft: false
 tags:
   - AI
 ---
+
 ## General MCP work flow
 
 !![Image Description](/images/Pasted%20image%20202509041.png.png)
